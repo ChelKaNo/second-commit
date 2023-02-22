@@ -1,8 +1,8 @@
 [
     {
-        "models": "web_lib.Author",
+        "model": "web_lib.Author",
         "pk": "123e4567-e89b-12d3-a456-426655440000",
-        "friend":{
+        "fields":{
             "name": "Nem",
             "age": 25,
             "email":"ytre@mail.ru",
@@ -20,8 +20,8 @@
             "published": "2023-02-19 11:39:55.550691+00:00",
             "author": "123e4567-e89b-12d3-a456-426655440000"
         }
-
     },
+    
     {
         "model":"web_lib.Book",
         "pk": 7,
