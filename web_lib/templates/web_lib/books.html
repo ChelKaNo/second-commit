@@ -1,0 +1,19 @@
+{% extends 'web_lib/main.html' %}
+
+
+{% block content %}
+    <h1>Books</h1>
+    <div class="books-style">
+    <div>
+        {% if books %}
+            {% for books in books %}
+                <p>title:  {{books.title}}</p>
+                <p>description:  {{books.description}}</p>
+                <p>date:  {{books.published|date:'DATE_FORMAT'}}</p>
+                <hr>
+            {% endfor %}
+        {% else %}
+            <p>No books</p>
+        {% endif %}                   
+    </div>
+{% endblock %}    
